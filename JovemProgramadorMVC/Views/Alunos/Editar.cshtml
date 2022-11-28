@@ -1,0 +1,50 @@
+﻿@model AlunoModel
+
+
+<form asp-controller="Alunos" asp-action="AlterarUsuario" method="post">
+
+
+<input type="hidden" asp-for="Id" />
+
+            <div class="mb-3 row">
+                <label for="staticEmail" class="col-sm-1 form-label">Nome</label>
+                <input type="text" asp-for="Nome" class="form-control col-md-5" />
+            </div>
+
+
+
+
+            <div class="mb-3 row">
+                <label for="staticEmail" class="col-sm-1 col-form-label">Idade</label>
+                <input type="text" asp-for="Idade" class="form-control col-md-1" />
+            </div>
+
+
+
+            <div class="mb-3 row">
+                <label for="staticEmail" class="col-sm-1 col-form-label">Contato</label>
+                <input type="text" asp-for="Contato" class="form-control col-md-2" />
+            </div>
+
+
+
+            <div class="mb-3 row">
+                <label for="staticEmail" class="col-sm-1 col-form-label">E-mail</label>
+                <input type="text" asp-for="Email" class="form-control col-md-3" />
+            </div>
+
+
+
+            <div class="mb-3 row">
+                <label for="staticEmail" class="col-sm-1 col-form-label">CEP</label>
+                <input type="text" asp-for="CEP" class="form-control col-md-2" />
+            </div>
+
+
+
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="submit">Editar</button>
+                <a class="btn btn-primary" type="button" asp-controller="Alunos" asp-action="Index">Voltar</a>
+            </div>
+
+</form>          
